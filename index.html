@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora de Dizimo</title>
+    <link rel="shortcut icon" href="cruz.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calcular Dízimo</h1>
+    <div class="corpo-projeto">
+        <div class="calculadora">
+            <h2>/*calculadora, caso precise!*/</h2>
+             <div class="calculadora-body" >
+                <input type="text" class="exib_calc">
+                <div class="buttons" >
+                    <div class="primera_linha">
+                        <input type="button" value="C" id="c"   class="buttons_limp" >
+                        <input type="button" value="<" onclick="back()" id="back" class="buttons_back" >
+                        <input type="button" value="%" id="porcento" class="buttons_item" >
+                        <input type="button" value="/" id="divisao" class="operacao buttons_item" >
+                    </div>
+                    <div class="segunda_linha" >
+                        <input type="button" value="7" class="buttons_item" >
+                        <input type="button" value="8" class="buttons_item" >
+                        <input type="button" value="9" class="buttons_item" >
+                        <input type="button" value="*" id="multiplicacao" class=" operacao buttons_item" >
+                    </div>
+                     <div class="terceira_linha" >
+                        <input type="button" value="4" class="buttons_item" >
+                        <input type="button" value="5" class="buttons_item" >
+                        <input type="button" value="6" class="buttons_item" >
+                        <input type="button" value="-" id="menos" class=" operacao buttons_item" >
+                    </div>
+                     <div class="quarta_linha" >
+                        <input type="button" value="1" class="buttons_item" >
+                        <input type="button" value="2" class="buttons_item" >
+                        <input type="button" value="3" class="buttons_item" >
+                        <input type="button" value="+" id="mais" class="operacao buttons_item" >
+                    </div>
+                     <div class="quinta_linha" >
+                        <input type="button" value="0" class="buttons_item" >
+                        <input type="button" value="," class="buttons_item" >
+                        <input type="button" value="=" id="igual" class="especial" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calculo_dizimo">
+            <strong><label class="dizimo" for="dizimo">Digite o valor do seu Salário:</label></strong>
+            <input id="dizimo" class="calculo_dizimo_input" type="number" >
+            <h3 class="mensagem-dizimo" ></h3>
+            <input class="calcular" type="button" value="calcular">
+            <a target="_blank" href="https://www.tabernaculocampinas.org.br/"><input class="calcular"type="button" value="Realizar Pagamento"></a>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
